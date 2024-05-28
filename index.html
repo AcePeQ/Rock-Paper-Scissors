@@ -4,8 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        background-color: antiquewhite;
+        font-family: sans-serif;
+      }
+
+      .title {
+        font-size: 64px;
+        margin-bottom: 48px;
+
+        text-shadow: -12px 6px 12px #000;
+      }
+
+      .main {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        gap: 70px;
+      }
+
+      .displayBox {
+        font-size: 48px;
+      }
+
+      .btns {
+        display: flex;
+        gap: 24px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        font-size: 36px;
+        padding: 12px 24px;
+        border-radius: 9px;
+
+        transition: all 0.4s;
+      }
+
+      .btn:hover {
+        background-color: orange;
+        color: white;
+      }
+    </style>
   </head>
   <body>
+    <div class="main">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <div class="displayBox">
+        <span class="displayText">What's your choice?</span>
+      </div>
+      <div class="btns">
+        <button data-choice="rock" class="btn">🪨 Rock</button>
+        <button data-choice="paper" class="btn">🧻 Paper</button>
+        <button data-choice="scissors" class="btn">✂️ Scissors</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
