@@ -36,6 +36,10 @@
 
       .displayBox {
         font-size: 48px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
       }
 
       .btns {
@@ -60,6 +64,22 @@
         background-color: orange;
         color: white;
       }
+
+      .displayBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .scoreText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -67,6 +87,7 @@
       <h1 class="title">Rock Paper Scissors</h1>
       <div class="displayBox">
         <span class="displayText">What's your choice?</span>
+        <span class="scoreText hidden">You: 0 Computer: 0</span>
       </div>
       <div class="btns">
         <button data-choice="rock" class="btn">🪨 Rock</button>
